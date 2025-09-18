@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Xiao Long Bites</title>
+  <title>Xiao Long Bites - Filipino Sweet Xiao Long Bao</title>
+  <!-- Google Fonts for Filipino vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat&display=swap" rel="stylesheet" />
   <style>
     /* Reset and base */
     * {
@@ -11,9 +13,9 @@
     }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #ffe4e1, #fffacd);
-      color: #333;
+      font-family: 'Baloo 2', cursive, 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f9f1e7, #fff8dc);
+      color: #4b2e05;
       line-height: 1.6;
       display: flex;
       justify-content: center;
@@ -21,148 +23,182 @@
     }
     .container {
       max-width: 900px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: #fff8dc;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(75, 46, 5, 0.2);
       overflow: hidden;
       width: 100%;
+      border: 4px solid #d18c00;
     }
     header {
-      background-color: #b22222;
+      background-color: #d18c00;
       color: #fff8dc;
       text-align: center;
       padding: 40px 20px 60px;
       position: relative;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-shadow: 1px 1px 2px #6b4a00;
     }
     header img.logo {
       width: 96px;
       height: 96px;
       border-radius: 50%;
-      border: 4px solid #ffdb58;
-      box-shadow: 0 0 10px rgba(255, 219, 88, 0.7);
+      border: 4px solid #fff8dc;
+      box-shadow: 0 0 15px #fff8dcaa;
       margin-bottom: 16px;
       object-fit: cover;
+      background: white;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0 0 8px;
+      font-family: 'Baloo 2', cursive;
     }
     header p.slogan {
       font-style: italic;
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       margin: 0 0 12px;
-    }
-    header p.subtitle {
-      max-width: 400px;
-      margin: 0 auto;
-      opacity: 0.8;
+      font-weight: 600;
+      letter-spacing: 0.1em;
     }
     header .underline {
       position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: 30%;
+      right: 30%;
       height: 6px;
-      background-color: #ffdb58;
+      background-color: #fff8dc;
+      border-radius: 4px 4px 0 0;
     }
     section {
       padding: 32px 24px;
-      border-bottom: 2px solid #ffdb58;
+      border-bottom: 3px solid #d18c00;
+    }
+    section:last-of-type {
+      border-bottom: none;
     }
     section h2 {
-      color: #b22222;
-      font-size: 1.75rem;
-      margin-bottom: 16px;
+      color: #a35c00;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #d18c00;
+      padding-bottom: 6px;
+      font-family: 'Baloo 2', cursive;
     }
-    ul.flavors {
-      list-style-type: disc;
-      padding-left: 20px;
-      max-width: 400px;
-      margin: 16px auto 0;
-      color: #555;
+    p, li {
+      max-width: 720px;
+      margin: 0 auto 16px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #5a3e00;
     }
-    .product-images {
-      display: flex;
-      gap: 16px;
-      padding: 32px 24px;
-      background: #fff8dc;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .product-images img {
-      width: 100%;
-      max-width: 420px;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border: 2px solid #ffdb58;
-    }
-    /* Removed QR code styles */
-
-    footer {
-      background-color: #b22222;
-      color: #fff8dc;
-      text-align: center;
-      padding: 24px 20px;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffdb58;
-      text-decoration: underline;
-    }
-    footer .flags {
-      margin-top: 8px;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-    }
-
-    /* Flavor boxes styles */
     .flavor-boxes {
       display: flex;
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 16px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
     .flavor-box {
-      background-color: #fff3cd; /* light yellow */
-      border: 2px solid #ffdb58; /* golden yellow border */
-      border-radius: 12px;
-      padding: 20px 24px;
-      width: 260px;
-      box-shadow: 0 4px 8px rgba(255, 219, 88, 0.3);
+      background-color: #fef6d7;
+      border: 3px solid #d18c00;
+      border-radius: 14px;
+      padding: 24px 28px;
+      width: 220px;
+      box-shadow: 0 4px 10px rgba(209, 140, 0, 0.3);
       text-align: center;
+      font-weight: 700;
+      color: #7a4e00;
+      font-family: 'Baloo 2', cursive;
       transition: transform 0.3s ease;
+      user-select: none;
     }
-
     .flavor-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(209, 140, 0, 0.5);
     }
-
     .flavor-box h3 {
       margin-top: 0;
-      color: #b22222;
-      font-size: 1.5rem;
-      margin-bottom: 8px;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #a35c00;
     }
-
-    @media (max-width: 600px) {
-      .product-images {
-        flex-direction: column;
-        align-items: center;
-      }
-      .flavor-boxes {
-        flex-direction: column;
-        align-items: center;
-      }
-      .flavor-box {
-        width: 100%;
-        max-width: 320px;
-      }
+    .product-images {
+      display: flex;
+      gap: 20px;
+      padding: 32px 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #fff3b0;
+      border-top: 3px solid #d18c00;
+      border-bottom: 3px solid #d18c00;
+    }
+    .product-images img {
+      width: 100%;
+      max-width: 400px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(209, 140, 0, 0.3);
+      border: 3px solid #d18c00;
+      background: white;
+    }
+    .map-section {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+    .map-section img {
+      max-width: 250px;
+      border: 3px solid #d18c00;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(209, 140, 0, 0.4);
+      margin-bottom: 16px;
+      background: white;
+    }
+    .map-section p {
+      font-size: 1rem;
+      font-style: italic;
+      color: #7a4e00;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bible-verse {
+      max-width: 720px;
+      margin: 0 auto 48px;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #6b4a00;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    footer {
+      background-color: #d18c00;
+      color: #fff8dc;
+      text-align: center;
+      padding: 20px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      font-family: 'Montserrat', sans-serif;
+      user-select: none;
+    }
+    footer a {
+      color: #fff8dc;
+      text-decoration: underline;
+    }
+    footer .flags {
+      margin-top: 8px;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
     }
   </style>
 </head>
@@ -174,37 +210,49 @@
         alt="Xiao Long Bites Logo"
         class="logo"
       />
-      <h1>小笼包 • Xiao Long Bites</h1>
+      <h1>Xiao Long Bites</h1>
       <p class="slogan">"Where Every Bite is A Delight"</p>
-      <p class="subtitle">A Sweet Filipino-Chinese Fusion — Dessert Dumplings from Marilao, Bulacan</p>
       <div class="underline"></div>
     </header>
+
+    <section class="product-images" aria-label="Product images of Xiao Long Bites">
+      <img
+        src="https://i.pinimg.com/736x/8c/97/ac/8c97ac093ed1c4e87d626933e568ca82.jpg"
+        alt="Xiao Long Bites Ube and Chocolate flavors"
+        loading="lazy"
+      />
+      <img
+        src="https://i.pinimg.com/736x/e1/3d/e7/e13de7a1fa3550330368cb3f9c099641.jpg"
+        alt="Xiao Long Bites Mango flavor inspired by San Rafael mangoes"
+        loading="lazy"
+      />
+    </section>
 
     <section>
       <h2>Business Introduction</h2>
       <p>
-        Xiao Long Bites is a dessert business in Marilao, Bulacan that introduces a new way of enjoying xiao long bao by offering it in sweet flavors. The business starts with three delicious flavors: ube, chocolate, and mango — all served in eco-friendly packaging. The owners aim to create a unique dessert experience that combines familiarity with innovation while promoting sustainability.
+        Xiao Long Bites is a dessert business in Marilao, Bulacan that introduces a new way of enjoying xiao long bao by offering it in sweet flavors. The business would start off by selling its first three flavors: ube, chocolate, and mango, all served in eco-friendly packaging. The owners aim to create a unique dessert experience that combines familiarity with innovation while promoting sustainability.
       </p>
       <p>
-        The business envisions growth by establishing a strong presence in the local community through school events and social media promotion. After success in Marilao, Xiao Long Bites plans to expand to other municipalities and cities, growing its menu based on customer feedback and taste testing. The goal is to become the leading dessert xiao long bao brand for food lovers and sweet enthusiasts.
+        Xiao Long Bites is envisioned to grow beyond its starting point by first establishing a strong presence in the local community, particularly through school events and social media promotion. After gaining success in its initial location, the business would gradually expand to other municipalities and cities. Along with expansion, the menu would also grow to include more dessert variations based on customer feedback and taste testing. With proper promotion and development, Xiao Long Bites seeks to reach larger markets and become the leading dessert xiao long bao brand for food lovers and sweet enthusiasts.
       </p>
     </section>
 
     <section>
       <h2>Flavor Background</h2>
       <p>
-        Our dessert dumplings come in three delightful flavors. The mango flavor is made using the famous <em>San Rafael mangoes</em>, known for their exceptional sweetness and quality.
+        Our dessert dumplings come in three delightful flavors: <strong>Ube</strong>, <strong>Chocolate</strong>, and <strong>Mango</strong>. The mango flavor is made using the famous <em>San Rafael mangoes</em>, known for their exceptional sweetness and quality.
       </p>
-      <div class="flavor-boxes">
-        <div class="flavor-box">
+      <div class="flavor-boxes" aria-label="Flavors of Xiao Long Bites">
+        <div class="flavor-box" tabindex="0">
           <h3>Ube</h3>
           <p>A beloved Filipino purple yam flavor.</p>
         </div>
-        <div class="flavor-box">
+        <div class="flavor-box" tabindex="0">
           <h3>Chocolate</h3>
           <p>Rich and creamy for chocolate lovers.</p>
         </div>
-        <div class="flavor-box">
+        <div class="flavor-box" tabindex="0">
           <h3>Mango</h3>
           <p>Made with authentic San Rafael mangoes.</p>
         </div>
@@ -212,32 +260,29 @@
     </section>
 
     <section>
-      <h2>Cultural Background</h2>
-      <p>
-        The use of San Rafael mangoes connects our product deeply to the local culture and agricultural heritage of San Rafael, Bulacan. This region is celebrated for its vibrant food culture and quality produce. By incorporating these mangoes, Xiao Long Bites honors local traditions while offering a fresh, innovative dessert experience.
-      </p>
-      <p>
-        Our eco-friendly packaging also reflects our commitment to sustainability and respect for the environment, values that resonate strongly within our community.
-      </p>
+      <h2>San Rafael, Bulacan &amp; Cultural Connection</h2>
+      <div class="map-section">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ph_locator_bulacan_san_rafael.png/250px-Ph_locator_bulacan_san_rafael.png"
+          alt="Map showing San Rafael, Bulacan location"
+          loading="lazy"
+        />
+        <p>
+          San Rafael is a municipality in Bulacan, Philippines, known for its rich agricultural heritage and vibrant local culture. It is especially famous for producing some of the sweetest and highest quality mangoes in the country. By using San Rafael mangoes in our mango-flavored dessert dumplings, Xiao Long Bites honors this local tradition and supports the community’s farmers. This connection brings a unique Filipino cultural essence to our sweet xiao long bao, blending innovation with heritage.
+        </p>
+      </div>
     </section>
 
-    <section class="product-images">
-      <img
-        src="https://i.pinimg.com/736x/8c/97/ac/8c97ac093ed1c4e87d626933e568ca82.jpg"
-        alt="Xiao Long Bites Ube and Chocolate flavors"
-      />
-      <img
-        src="https://i.pinimg.com/736x/e1/3d/e7/e13de7a1fa3550330368cb3f9c099641.jpg"
-        alt="Xiao Long Bites Mango flavor inspired by San Rafael mangoes"
-      />
+    <section class="bible-verse" aria-label="Bible verse">
+      <p><em>"I can do all things through Christ who strengthens me." – Philippians 4:13</em></p>
     </section>
 
     <footer>
       <p>
-        © 2024 Xiao Long Bites • 小笼包 • Chinese-Filipino Fusion Desserts • Marilao, Bulacan •
+        © 2024 Xiao Long Bites • Filipino-Chinese Fusion Desserts • Marilao, Bulacan •
         <a href="https://xiaolongbites.com" target="_blank" rel="noopener noreferrer">xiaolongbites.com</a>
       </p>
-      <div class="flags" aria-label="Flags">
+      <div class="flags" aria-label="Flags representing Philippines and China">
         <span>🇵🇭</span>
         <span>🇨🇳</span>
         <span>✨</span>
