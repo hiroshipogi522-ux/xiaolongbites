@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const XiaoLongBitesSite = () => {
   const [qrScanned, setQrScanned] = useState(false);
 
-  // Simulate QR scan action
   const handleScanSimulation = () => {
     setQrScanned(true);
     setTimeout(() => setQrScanned(false), 3000);
